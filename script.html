@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    function reverseString(str) {
+        return str.split("").reverse().join("");
+    }
+
+    console.log(reverseString("hello"));
+
+
+    let name = "Welocome to the mexico"
+
+    let country = name.split(" ")
+    console.log(country)
+
+    let Afria = "Hello south africa"
+    let Zim = [...Afria]
+    console.log(Zim)
+
+
+    let MRF = "Shared Village"
+
+    let FRF = Object.assign([], MRF)
+    console.log(FRF)
+
+
+    let arr = []; lentt = 5;
+
+    for (i = 0; i <= lentt; i++) {
+        arr.push(7)
+    }
+
+    console.log(arr)
+
+    const arrr = [1, 2, 3, 4, 8, 3]
+
+    for (i = 0; i < arr.length; i++) {
+        console.log(arrr[i])
+    }
+    let employees_data = [
+        {
+            employee_id: 1,
+            employee_name: "Aman",
+        },
+        {
+            employee_id: 2,
+            employee_name: "Bhargava",
+        },
+        {
+            employee_id: 3,
+            employee_name: "Chaitanya",
+        },
+    ];
+
+    const modified = employees_data.map(data => {
+
+
+        if (data.employee_id === 1) {
+            return { ...data, employee_name: "Rahul" }
+        }
+        return data;
+    })
+    console.log(modified)
+
+
+    const myArray = ['a', 'b', 'b', 'c', 'c', 'c'];
+    const elementCounts = {};
+    myArray.forEach(element => {
+        elementCounts[element] = (elementCounts[element] || 0) + 1;
+    });
+    console.log(elementCounts);
+
+
+    const arrObj = { a: 3, b: 9, c: 7, d: 8 };
+
+    for (const key in elementCounts) {
+        if (arrObj[key] % 2 === 1) {
+            console.log(key);
+        }
+    }
+
+
+
+</script>
+
+
+
+</html>

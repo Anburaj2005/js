@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .icon-container {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .icon {
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .icon-container:hover .icon::after {
+    content: 'Hovered!'; /* Text to display on hover */
+    position: absolute;
+    top: 30px; /* Adjust as needed to position the text */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+
+  .icon-container:hover .icon:hover {
+    color: #0056b3; /* Change icon color on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="icon-container">
+  <span class="icon">🚀</span> <!-- Replace with your desired icon -->
+</div>
+
+</body>
+</html>

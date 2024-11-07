@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styles for timeline container */
+.tmlne-cnt {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* Styles for each timeline step */
+.tmlne-stp {
+    flex: 1; /* Each step takes up equal space */
+    max-width: 200px; /* Set maximum width for each step */
+    margin: 10px; /* Add some space between steps */
+}
+
+/* Styles for images inside steps */
+.tmlne-stp img {
+    width: 100%; /* Make images fill their parent container */
+}
+
+/* Styles for paragraphs inside steps */
+.tmlne-stp p {
+    text-align: center; /* Center the text */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .tmlne-stp {
+        flex-basis: 100%; /* Each step takes up full width */
+        max-width: none; /* Remove maximum width */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="tmlne-cnt">
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2 ">
+            <p class="ps-2"> Tax Information</p>
+        </div>
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2">
+            <p class="ps-2"> Revenue </p>
+        </div>
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2">
+            <p class="ps-2"> Expenses </p>
+        </div>
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2">
+            <p class="ps-2"> Net Assets & Balance Sheet</p>
+        </div>
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2">
+            <p class="ps-2">Other Info</p>
+        </div>
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2">
+            <p class="ps-2">Section 501(c)(3)&(7) Organizations Only</p>
+        </div>
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2">
+            <p class="ps-2">Public Charity Status</p>
+        </div>
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2">
+            <p class="ps-2">Preparer</p>
+        </div>
+
+        <div class="tmlne-stp info-cnt">
+            <img src="images/step-complete.png" alt="step" class="ps-2 pe-2">
+            <p class="ps-2">Payment, Confirm &Submit</p>
+        </div>
+
+
+    </div>
+</body>
+</html>
